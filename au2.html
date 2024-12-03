@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 2: Sistema de Nombres de Dominio (DNS)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Tema 2: Sistema de Nombres de Dominio (DNS)</h1>
+        </header>
+
+        <main>
+            <section class="content">
+                <h2>Introducción</h2>
+                <p>
+                    El Sistema de Nombres de Dominio, más conocido como DNS, es un componente esencial para la funcionalidad de Internet. <br><br> 
+                    Se encarga de traducir nombres de dominio comprensibles para los humanos (como <code>www.ejemplo.com</code>) en direcciones IP que las computadoras utilizan para comunicarse entre sí. <br><br>
+                    Sin el DNS, los usuarios tendrían que recordar largas secuencias numéricas para acceder a los sitios web. <br><br>
+                </p>
+
+                <h2>Componentes del DNS</h2>
+                <p> 
+                    El sistema DNS se compone de varios elementos clave que trabajan en conjunto para realizar la traducción de nombres: <br><br>
+                </p>
+                <ul>
+                    <li><strong>Servidores de nombres:</strong> Son responsables de almacenar los registros DNS y responder a las consultas.</li><br>
+                    <li><strong>Resolver:</strong> Un software que se ejecuta en las computadoras de los usuarios, encargado de consultar el DNS.</li><br>
+                    <li><strong>Registros DNS:</strong> Contienen información específica sobre nombres de dominio, como su dirección IP asociada.</li><br>
+                </ul>
+
+                <h2>Proceso de Resolución</h2>
+                <p>
+                    Cuando un usuario escribe una dirección en su navegador, el DNS sigue un proceso estructurado para devolver la IP correcta: <br><br>
+                </p>
+                <ol>
+                    <li>Consulta al *resolver* local.</li><br>
+                    <li>El resolver pregunta a un servidor raíz.</li><br>
+                    <li>El servidor raíz redirige al servidor TLD (como <code>.com</code>).</li><br>
+                    <li>Finalmente, se consulta al servidor de nombres autoritativo del dominio.</li><br>
+                </ol>
+
+                <h2>Espacio para video</h2>
+                <p>Este espacio está reservado para un video que explica el funcionamiento del DNS:</p>
+                <div class="video-placeholder">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/Allly1Ydglk?si=flLcgxHGtW7IppXL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <h2>Ejemplo visual</h2>
+                <p>A continuación, se muestra una representación gráfica del proceso de resolución DNS:</p>
+                <img src="dns-process.png" alt="Proceso de resolución DNS" class="example-image">
+
+                <br><br>
+
+                <h2>Beneficios del DNS</h2>
+                <p>
+                    Entre las ventajas que proporciona el sistema DNS, se destacan: <br><br>
+                </p>
+                <ul>
+                    <li><strong>Facilidad de uso:</strong> Permite acceder a sitios web mediante nombres amigables.</li><br>
+                    <li><strong>Escalabilidad:</strong> El sistema puede manejar millones de nombres de dominio sin problemas.</li><br>
+                    <li><strong>Seguridad:</strong> A través de protocolos como DNSSEC, se asegura la integridad de las consultas.</li><br>
+                </ul>
+
+                <div class="back-button">
+                    <a href="index.html">Regresar al Índice</a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2024 Administración de Servidores - Tema 2</p>
+        </footer>
+    </div>
+</body>
+</html>
